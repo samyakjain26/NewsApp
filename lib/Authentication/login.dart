@@ -24,15 +24,13 @@ class _signupState extends State<signup> {
       resizeToAvoidBottomInset: true,
       backgroundColor: Color(0xffEFF1F3),
       // resizeToAvoidBottomPadding: false,
-      body: SingleChildScrollView(
-        child: SafeArea(
+      body: SafeArea(
+        child: SingleChildScrollView(
           child: Stack(
             children: [
               Column(
                 children: [
-                  SizedBox(
-                    height: 270,
-                  ),
+                  SizedBox(height: h * 0.32),
                   Container(
                       child: Column(
                         children: [
