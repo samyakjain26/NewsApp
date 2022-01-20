@@ -6,6 +6,7 @@ import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/Authentication/login.dart';
 import 'package:news_app/Authentication/signup.dart';
+import 'package:news_app/home.dart';
 
 class signup extends StatefulWidget {
   const signup({Key? key}) : super(key: key);
@@ -192,7 +193,13 @@ class _signupState extends State<signup> {
                                                   BorderRadius.circular(30.0),
                                               side: BorderSide(
                                                   color: Color(0xff283C46))),
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        home()));
+                                          },
                                           // padding: EdgeInsets.only(top: 20.0),
                                           color: Color(0xff283C46),
                                           textColor: Colors.white,
